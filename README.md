@@ -175,7 +175,7 @@ Dari gambar diatas dapat kita buat tree subnet seperti berikut :
 # The Resonance
 ![image](https://user-images.githubusercontent.com/94664966/204092138-523a790a-7797-4d55-a55e-24e4d7927e53.png)
 
-The Order
+### TheOrder
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.28.32.1
 route add -net 10.28.0.0 netmask 255.255.252.0 gw 10.28.8.2
@@ -183,25 +183,27 @@ route add -net 10.28.5.0 netmask 255.255.255.252 gw 10.28.8.2
 route add -net 10.28.4.0 netmask 255.255.255.0 gw 10.28.8.2
 ```
 
-The minister
+### The Minister
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.28.8.1
 route add -net 10.28.4.0 netmask 255.255.255.0 gw 10.28.5.2
 ```
 
-the dauntless
+### The Dauntless
 ```
 route add 0.0.0.0 netmask 0.0.0.0 gw 10.28.5.1
 ```
 
-the firefist
+### The Firefist
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.28.68.1
 route add -net 10.28.65.0 netmask 255.255.255.252 gw 10.28.64.3
 ```
-the instrument
+
+### The Instrument
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.28.96.1
+
 route add -net 10.28.72.0 netmask 255.255.255.128 gw 10.28.73.2
 route add -net 10.28.72.128 netmask 255.255.255.128 gw 10.28.73.2
 
@@ -210,12 +212,12 @@ route add -net 10.28.66.0 netmask 255.255.254.0 gw 10.28.68.2
 route add -net 10.28.65.0 netmask 255.255.255.252 gw 10.28.68.2
 ```
 
-the magical
+### The Magical
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.28.130.1
 ```
 
-the poofound
+### The Poofound
 ```
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.28.73.1
 ```
