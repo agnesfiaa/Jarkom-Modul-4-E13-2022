@@ -22,9 +22,88 @@ Dengan demikian, didapatkan NID untuk masing-masing subnet sebagai berikut:
 
 Berikan IP pada masing-masing interface pada subnet sesuai dengan aturan yang telah diberikan diatas.
 
+### Menambah Ethernet/Port
+Port harus ditambah karena default hanya ada 2. <br>
+![The Refonance_tambah port](https://user-images.githubusercontent.com/94664966/204094350-6044b4fb-7b83-430e-ada3-7a14a2a5a5bd.png)<br>
+
+### Config IP pada Node
+#### Router
+![The Refonance_00](https://user-images.githubusercontent.com/94664966/204094444-71218691-1137-4464-8e80-098507e538a5.png)<br>
+Pada TheMinister, tambahkan IP dan Subnet Mask sesuai perhitungan pembagian IP dan ditambah 1 dari subnet. Lalu, centang pada bagian Port Status agar menjadi on.
+
+#### Server & Client
+![ASHAF](https://user-images.githubusercontent.com/94664966/204094691-b43b4895-144e-4c1c-a88a-11b784ba640b.png)
 
 ## ROUTING
+### The Refonance
+```
+10.8.0.4/30 via 10.8.0.10
+10.8.0.64/26 via 10.8.0.10
+10.8.8.0/22 via 10.8.0.10
+10.8.0.0/30 via 10.8.0.10
+10.8.2.0/24 via 10.8.0.10
+10.8.0.24/30 via 10.8.0.26
+10.8.6.0/23 via 10.8.0.26
+10.8.0.16/30 via 10.8.0.18
+10.8.0.128/30 via 10.8.0.18
+10.8.0.20/30 via 10.8.0.18
+10.8.1.128/25 via 10.8.0.18
+10.8.1.0/25 via 10.8.0.18
+10.8.0.12/30 via 10.8.0.18
+10.8.4.0/23 via 10.8.0.18
+10.8.3.0/24 via 10.8.0.18
+10.8.0.28/30 via 10.8.0.18
+```
 
+### The Order
+```
+0.0.0.0/0 via 10.8.0.9
+10.8.8.0/22 via 10.8.0.6
+10.8.0.0/30 via 10.8.0.6
+10.8.2.0/24 via 10.8.0.6
+```
+
+### The Minister
+```
+0.0.0.0/0 via 10.8.0.5
+10.8.2.0/24 via 10.8.0.2
+```
+
+### The Daundless
+```
+0.0.0.0/0 via 10.8.0.1
+```
+
+### The Megical
+```
+0.0.0.0/0 via 10.8.0.25
+```
+
+### The Instrument
+```
+0.0.0.0/0 via 10.8.0.17
+10.8.0.20/30 via 10.8.0.22
+10.8.1.128/25 via 10.8.0.22
+10.8.1.0/25 via 10.8.0.22
+10.8.0.12/30 via 10.8.0.14
+10.8.3.0/24 via 10.8.0.14
+10.8.4.0/23 via 10.8.0.14
+10.8.0.28/30 via 10.8.0.14
+```
+
+### The Poofound
+```
+0.0.0.0/0 via 10.8.0.21
+```
+
+### The Etefist
+0.0.0.0/0 via 10.8.0.13
+10.8.0.28/30 via 10.8.3.3
+
+### The Queen
+```
+0.0.0.0/0 via 10.8.3.1
+```
 
 ## TOPOLGI JARINGAN CIDR - GNS3
 
